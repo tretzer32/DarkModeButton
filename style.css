@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #d3d8ea;
+}
+
+.box{
+    height: 400px;
+    width:  800px;
+    border-radius: 714px;
+    position: relative;
+    margin: 20px;
+    box-shadow: inset 0px 2px 5px #313130, inset 0px -1px 1px rgb(159, 157, 157);
+    background-color: #1c71b9;
+    z-index: 2;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 100px;
+    transition-duration: 1s;
+
+}
+.sun {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    background-color: rgba(233, 201, 72, 1); 
+    box-shadow: inset -4px -4px 22px rgba(172, 149, 52, 0.35), inset 4px 4px 22px rgba(172, 149, 52, 0.35); 
+    border-radius: 50%;
+    z-index: 2;  
+    transition-duration: 0.8s;
+}
+.stain{
+    display: inline-block;
+    background-color: #a3a6b7;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+.stain1 {
+    width: 58.33px;
+    height: 58.33px;
+    top: 67.5px;
+    left: 152.5px;
+}
+.stain2 {
+    width: 104.17px;
+    height: 104.17px;
+    top: 155.83px;
+    left: 57.5px;
+}
+.stain3 {
+    width: 66.67px;
+    height: 66.67px;
+    top: 245.83px;
+    left: 190.17px;
+}
+.wave1,.wave2,.wave3{
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(247, 248, 251, 0.05);
+}
+.wave1 {
+    width: 490.34px;
+    height: 484.84px;
+    left: -20%;
+    top: -20%;
+}
+.wave2 {
+    width: 700px;
+    height: 700px;
+    left: -50%;
+    top: -50%;
+}
+.wave3 {
+    width: 900px;
+    height: 800px;
+    top: calc(-50% + -25px); 
+    left: -80%; 
+}
+.clouds{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    overflow: hidden;
+    transition-duration: 0.8s;
+}
+.cloud__white {
+    position: absolute;
+    background-image: url('/img/clouds-white.svg');
+    background-color: transparent;
+    bottom: -128px;
+    left: 42px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.cloud__black{
+
+    position: absolute;
+    background-image: url('/img/clouds-black.svg');
+    background-color: transparent;
+    bottom: -79px;
+    left: 4px;
+    width: 99%;
+    height: 100%;
+    z-index: 1;
+}
+.stars{
+    position: absolute;
+    left: -300px;
+    top: 50px;
+    height: 300px;
+    width: 300px;
+    background-image: url('/img/stars.svg');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    z-index: 4;
+    transition-duration: 1s;
+}
